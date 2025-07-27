@@ -203,65 +203,65 @@ window.addEventListener("load", () => {
 
 // Add loading animation
 window.addEventListener("load", () => {
-  const loader = document.createElement("div")
-  loader.className = "loader"
-  loader.innerHTML = `
-        <div class="loader-content">
-            <div class="spinner"></div>
-            <p>Loading Portfolio...</p>
-        </div>
-    `
+  // const loader = document.createElement("div");
+  // loader.className = "loader";
+  // loader.innerHTML = `
+  //       <div class="loader-content">
+  //           <div class="spinner"></div>
+  //           <p>Loading Portfolio...</p>
+  //       </div>
+  //   `;
 
-  loader.style.cssText = `
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-    transition: opacity 0.5s ease;
-`
+  // loader.style.cssText = `
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: #ffffff;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   z-index: 10000;
+  //   transition: opacity 0.5s ease;
+  // `;
 
-  const loaderContent = loader.querySelector(".loader-content")
-  loaderContent.style.cssText = `
-        text-align: center;
-        color: #64ffda;
-    `
+  // const loaderContent = loader.querySelector(".loader-content");
+  // loaderContent.style.cssText = `
+  //       text-align: center;
+  //       color: #64ffda;
+  //   `;
 
-  const spinner = loader.querySelector(".spinner")
-  spinner.style.cssText = `
-        width: 50px;
-        height: 50px;
-        border: 3px solid rgba(100, 255, 218, 0.3);
-        border-top: 3px solid #64ffda;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin: 0 auto 1rem;
-    `
+  // const spinner = loader.querySelector(".spinner");
+  // spinner.style.cssText = `
+  //       width: 50px;
+  //       height: 50px;
+  //       border: 3px solid rgba(100, 255, 218, 0.3);
+  //       border-top: 3px solid #64ffda;
+  //       border-radius: 50%;
+  //       animation: spin 1s linear infinite;
+  //       margin: 0 auto 1rem;
+  //   `;
 
-  // Add spinner animation
-  const style = document.createElement("style")
-  style.textContent = `
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    `
-  document.head.appendChild(style)
+  // // Add spinner animation
+  // const style = document.createElement("style");
+  // style.textContent = `
+  //     @keyframes spin {
+  //         0% { transform: rotate(0deg); }
+  //         100% { transform: rotate(360deg); }
+  //     }
+  // `;
+  // document.head.appendChild(style);
 
-  document.body.appendChild(loader)
+  // document.body.appendChild(loader);
 
   // Remove loader after 2 seconds
-  setTimeout(() => {
-    loader.style.opacity = "0"
-    setTimeout(() => {
-      document.body.removeChild(loader)
-    }, 500)
-  }, 2000)
+  // setTimeout(() => {
+  //   loader.style.opacity = "0";
+  //   setTimeout(() => {
+  //     document.body.removeChild(loader);
+  //   }, 500);
+  // },
 })
 
 // Add scroll progress indicator
